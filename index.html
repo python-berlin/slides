@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>PUB - Python Users Berlin</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/pub.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background="img/brandenburger_tor_half.png">
+          <div id="left-center">
+              <div id="round-background">
+                  <img id="clean-img" src="img/bear.png" />
+              </div>
+          </div>
+          <div id="right-center">
+              <img id="clean-img" style="width: 50%;" src="img/title-white.png" />
+          </div>
+        </section>
+        <section data-background="img/brandenburger_tor_half.png">
+            <h1>Welcome to PUB!</h1>
+        </section>
+        <section data-background="img/brandenburger_tor_half.png">
+            <h2>Since 2007</h2>
+            <h2>5000+ members</h2>
+            <br/>
+            <h3>meetup.com/Python-Users-Berlin-PUB</h3>
+        </section>
+        <section data-background="img/brandenburger_tor_half.png">
+            <h2>Python related topics</h2>
+            <h2>...and more!</h2>
+        </section>
+        <section data-background="img/brandenburger_tor_half.png">
+            <h1>Submit your idea!</h1>
+            <h2>talks@python.berlin</h2>
+        </section>
+        <section data-background="img/brandenburger_tor_half.png">
+            <h1>Join the community</h1>
+            <br/>
+            <h2>pythonberlin.slack.com</h2>
+            <h2>twitter.com/PyBerlin</h2>
+        </section>
+        <section data-background="img/brandenburger_tor_half.png">
+            <h1>Be nice to each other!</h1>
+            <h2>coc@python.berlin</h2>
+        </section>
+        <section data-background="img/brandenburger_tor_half.png">
+          <div id="left-center">
+              <div id="round-background">
+                  <img id="clean-img" src="img/bear.png" />
+              </div>
+          </div>
+          <div id="right-center">
+            <h1>Enjoy the meetup!</h1>
+            <h2>info@python.berlin</h2>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true }
+        ]
+      });
+    </script>
+<!--*****************************************************************************-->
+  <style type="text/css">
+  /* 1. Style header/footer <div> so they are positioned as desired. */
+  #round-background {
+    width:70%;
+    height: auto;
+    line-height:0;
+    padding: 2%;
+    border-radius:50%;
+    background: white;
+    z-index: -1;
+    margin: 0 auto;
+  }
+  #clean-img {
+    border: 0;
+    background: 0;
+    box-shadow: none;
+  }
+  #header-left {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  #header-right {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+  #footer-left {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+  }
+
+  /* Slide division */
+  #left {
+    left:-8.33%;
+    text-align: left;
+    float: left;
+    width:50%;
+    z-index:-10;
+  }
+
+  #left-center {
+    width:49%;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    z-index:-10;
+    vertical-align:middle;
+    align: center;
+    margin: 0 auto;
+  }
+  #right-center {
+    width:49%;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    z-index:-10;
+    vertical-align:middle;
+    margin: 0 auto;
+  }
+
+  #right {
+    left:31.25%;
+    top: 75px;
+    float: right;
+    text-align: right;
+    z-index:-10;
+    width:50%;
+  }
+
+  #rightl {
+    left:31.25%;
+    top: 75px;
+    float: right;
+    text-align: left;
+    z-index:-10;
+    width:50%;
+  }
+
+  #left70 {
+    left:-8.33%;
+    text-align: left;
+    float: left;
+    width:66%;
+    z-index:-10;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  #right70 {
+    left:-8.33%;
+    text-align: right;
+    float: right;
+    width:66%;
+    z-index:-10;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #right70l {
+    left:-8.33%;
+    text-align: left;
+    float: right;
+    width:66%;
+    z-index:-10;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #left30 {
+    left:31.25%;
+    top: 75px;
+    float: left;
+    text-align: left;
+    z-index:-10;
+    width:26%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  #right30 {
+    left:31.25%;
+    top: 75px;
+    float: right;
+    text-align: right;
+    z-index:-10;
+    width:26%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  /* styles */
+  .green {
+    color: #41cd52;
+    font-style: normal;
+  }
+
+  .green-dark {
+    color: #17a81a;
+    font-style: normal;
+  }
+
+  .gray {
+    color: #646464;
+    font-style: normal;
+  }
+  .blue {
+    color: #306998;
+    font-style: normal;
+  }
+  .blue-light {
+    color: #4B8BBE;
+    font-style: normal;
+  }
+  .yellow {
+    color: #FFD43B;
+    font-style: normal;
+  }
+  .yellow-light {
+    color: #FFE873;
+    font-style: normal;
+  }
+
+  .white {
+    color: #ffffff;
+    font-style: normal;
+  }
+
+  .red {
+    color: #ff6961;
+    font-style: normal;
+  }
+  </style>
+
+  <!-- 2. Create hidden header/footer <div> -->
+  <div id="hidden" style="display:none;">
+    <div id="header">
+      <div id="header-left"></div>
+      <div id="header-right"></div>
+      <div id="footer-left"><p style="font-size: 80%;margin-left: 20px;">Python Users Berlin (PUB) | 2019</p></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript">
+    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+    var header = $('#header').html();
+    if ( window.location.search.match( /print-pdf/gi ) ) {
+      Reveal.addEventListener( 'ready', function( event ) {
+        $('.slide-background').append(header);
+      });
+    }
+    else {
+      $('div.reveal').append(header);
+     }
+  </script>
+  </body>
+</html>
